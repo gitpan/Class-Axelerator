@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.PL,v 0.1 2009/02/13 22:59:21 dankogai Exp dankogai $
+# $Id: Makefile.PL,v 0.2 2009/02/15 02:25:03 dankogai Exp dankogai $
 #
 use strict;
 use warnings;
@@ -16,6 +16,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,
+	'Filter::Simple' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Class-Axelerator-*' },

@@ -1,10 +1,10 @@
 #
-# $Id: Axelerator.pm,v 0.1 2009/02/13 22:59:21 dankogai Exp dankogai $
+# $Id: Axelerator.pm,v 0.2 2009/02/15 02:25:03 dankogai Exp dankogai $
 #
 package Class::Axelerator;
 use warnings;
 use strict;
-our $VERSION = sprintf "%d.%02d", q$Revision: 0.1 $ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%02d", q$Revision: 0.2 $ =~ /(\d+)/g;
 use Filter::Simple;
 our $DEBUG = 0;
 
@@ -30,7 +30,7 @@ Class::Axelerator - Evade OO taxes
 
 =head1 VERSION
 
-$Id: Axelerator.pm,v 0.1 2009/02/13 22:59:21 dankogai Exp dankogai $
+$Id: Axelerator.pm,v 0.2 2009/02/15 02:25:03 dankogai Exp dankogai $
 
 =head1 SYNOPSIS
 
@@ -43,10 +43,10 @@ $Id: Axelerator.pm,v 0.1 2009/02/13 22:59:21 dankogai Exp dankogai $
 
 =head1 DESCRIPTION
 
-One of the drawbacks of the Perl's object orientation (POO as follows)
-is that it is its cost.  Since all methods are implemented as function
-calls, even simple accessors are 2-4 times more costly than non OO
-approach.  Simply put,
+Perl's object orientation (POO as follows) is powerful, flexible and
+... expensive.  Since all methods are implemented as function calls,
+even simple accessors are 2-4 times more costly than non OO approach.
+Simply put,
 
   my $attr = $obj->attr;
 
@@ -111,12 +111,11 @@ Dan Kogai, C<< <dankogai at dan.co.jp> >>
 
 Tax evasion is considered felony in most countries and territories :)
 
-Even in the Programming Republic of Perl, it is considered bad practice.
+Even in the Programming Republic of Perl, it is considered a bad practice.
 
 Please report any bugs or feature requests to C<bug-class-axelerator at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Class-Axelerator>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
 
 =head1 SUPPORT
 
